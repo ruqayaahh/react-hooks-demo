@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 import {
   Accordion,
   AccordionItem,
@@ -165,15 +165,16 @@ function Callback() {
               It's very useful when a component is passing a callback to its
               child component to prevent the rendering of the child component.
               It only changes the callback when one of its dependencies gets
-              changed. <br />
+              changed. This allows us to isolate resource intensive functions so
+              that they will not automatically run on every render. <br />
               <br />
-              It's syntax is: <br />
+              Its syntax is: <br />
               <code>
                 const functionName = useCallback(functionToMemoize,
                 [dependencies]);
               </code>
               <Flex justifyContent="center" mt="10px">
-                <Button onClick={() => navigate("/effect")}>
+                <Button onClick={() => navigate("/context")}>
                   Let's move on
                 </Button>
               </Flex>

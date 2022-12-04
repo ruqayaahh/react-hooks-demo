@@ -18,6 +18,11 @@ function State() {
   const navigate = useNavigate();
 
   const [number, setNumber] = useState(0);
+  /* useState handler Function not used. 
+  let keyword is used to declare useState variables to make it possible to reassign the 'secondNumber' variable in the updateCount function directly.
+  Try changing to const and observe what happens 
+*/
+
   let [secondNumber, setSecondNumber] = useState(0);
 
   const updateCount = () => {
@@ -89,12 +94,13 @@ function State() {
               what is displayed on the UI for the user to see. It solves the
               problem of printing and updating correct data to the user. <br />
               <br />
-              Updating variable without the handler Function provided by the
-               <strong>useState Hook</strong> will not update the user's view as
-              you saw above.
+              Updating variable without the handler Function provided by the{" "}
+              <strong>useState Hook</strong> like with the second button will
+              update the count (check the console to see that). It will,
+              however, not update the user's view. 
               <br />
               <br />
-              It's syntax is: <br />
+              Its syntax is: <br />
               <code>
                 const [variable, setVariable] = useState(initialStateOfVariable)
               </code>

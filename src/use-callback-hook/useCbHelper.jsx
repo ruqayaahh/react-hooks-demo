@@ -6,16 +6,9 @@ import {
   AccordionIcon,
   AccordionPanel,
   Box,
-  Button,
-  Card,
-  Flex,
   Heading,
-  Radio,
-  RadioGroup,
-  Select,
   Stack,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 
 export function UseCbHelper({ fetchJokes }) {
@@ -25,7 +18,7 @@ export function UseCbHelper({ fetchJokes }) {
     setJokes(fetchJokes());
     console.log(fetchJokes(), "fetchh");
   }, [fetchJokes]);
-  // console.log(jokes);
+
   return (
     <Accordion defaultIndex={[0]} allowMultiple>
       <AccordionItem>

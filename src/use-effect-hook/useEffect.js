@@ -55,7 +55,6 @@ function Effect() {
               variant="unstyled"
               placeholder="Select Jokes category"
               onChange={(e) => {
-                console.log(e.target.value);
                 setCategory(e.target.value);
               }}
             >
@@ -126,7 +125,7 @@ function Effect() {
               run only when its dependencies change.
               <br />
               <br />
-              It's syntax is: <br />
+              Its syntax is: <br />
               <code>useEffect(callback function, [dependencies]).</code>
               If the dependency array is empty, the callback function only runs
               once, and immediately after the component renders.
