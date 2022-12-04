@@ -1,35 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
+import { State } from "./use-state-hook";
+import { Welcome } from "./welcome";
+import { Effect } from "./use-effect-hook";
+import { Callback } from "./use-callback-hook";
+import { Context } from "./use-context-hook";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-  const [number, setNumber] = useState(0);
-  const [variable, setVariable] = useState("sampleOfInitialState");
-
-  let anotherVariable = "testing update without useState";
-  const [variableSample2, setvariableSample2] = useState(anotherVariable);
-
-  const updateWithoutUseStateFunction = () => {
-    anotherVariable = "variableSample2 is updated but will not show on the UI";
-    console.log(anotherVariable);
-  };
   return (
-    <div>
-      <h1>
-        {variable} {number} times
-      </h1>
-      <button
-        onClick={() => {
-          setVariable("updated");
-          setNumber(number + 1);
-        }}
-      >
-        Update Variable
-      </button>
-
-      <h1>{variableSample2}</h1>
-      <button onClick={() => updateWithoutUseStateFunction()}>
-        Update Variable Sample 2
-      </button>
-    </div>
+    <Routes>
+      <Route path="/" element={<Welcome />} />
+      <Route path="state" element={<State />} />
+      <Route path="effect" element={<Effect />} />
+      <Route path="callback" element={<Callback />} />
+      <Route path="context" element={<Context />} />
+    </Routes>
   );
 }
 
