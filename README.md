@@ -3,7 +3,7 @@ This repo is under active construction as more hooks use case are still being ad
 
 ## Get started
 
-1. Fork or clone the project.
+1. Fork or clone the repo.
 2. Run `npm install` or the shorthand `npm i` to install all dependencies.
 
 In the project directory, you can run:
