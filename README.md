@@ -1,3 +1,6 @@
+## Note
+This repo is under active construction as more hooks use case are still being added to it. Feel free to contribute to the repo in anyway if you feel you have a good grasp on any of the react hooks and can create a use-case for it. Simply fork the repo, create a branch with your name and hook you are working on like so: `will-useRef`, contribute and make a pull request to the `dev` branch.
+
 ## Get started
 
 1. Fork or clone the project.
